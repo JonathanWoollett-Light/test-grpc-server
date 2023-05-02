@@ -1,0 +1,36 @@
+syntax = "proto3";
+package helloworld;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+  // message Customer {
+  //   string email = 1;
+  // }
+  // message Card {
+  //   string number = 1;
+  //   uint32 exp_month = 2;
+  //   uint32 exp_year = 3;
+  //   uint32 cvc = 4;
+  //   optional string name = 5;
+  //   optional string address_line1 = 6;
+  //   optional string address_line2 = 7;
+  //   optional string address_city = 8;
+  //   optional string address_state = 9;
+  //   optional string address_zip = 10;
+  //   optional string address_country = 11;
+  // }
+  // Customer customer = 1;
+  // Card card = 2;
+}
+
+// The response message containing the greetings
+message HelloReply {
+  string hello = 1;
+}
